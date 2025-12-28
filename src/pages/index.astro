@@ -1,0 +1,32 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Footer from '../components/Footer.astro';
+import Header from '../components/Header.astro';
+import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Reflections on AI</h1>
+			<p>
+				Welcome to my blog where I share professional and personal reflections on artificial intelligence,
+				its impact on society, technology, and our daily lives.
+			</p>
+			<p>
+				This space is for exploring ideas, documenting learnings, and engaging in thoughtful discourse
+				about the rapidly evolving field of AI. From technical deep-dives to philosophical musings,
+				I'll be sharing perspectives on what it means to work with and live alongside AI.
+			</p>
+			<p>
+				<a href="/blog">Browse my posts</a> to read more, or <a href="/about">learn more about me</a>.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
