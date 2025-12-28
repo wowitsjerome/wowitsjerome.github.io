@@ -1,5 +1,9 @@
 name: Deploy to GitHub Pages
 
+# IMPORTANT: In your GitHub repo Settings → Pages → Source, 
+# you MUST select "GitHub Actions" (not "Deploy from a branch")
+# Otherwise GitHub Pages will try to build with Jekyll instead of using this workflow.
+
 on:
   # Trigger the workflow every time you push to the `main` branch
   push:
@@ -31,8 +35,10 @@ jobs:
       - name: Build Astro site
         run: npm run build
       
-      - name: Ensure .nojekyll exists
-        run: touch dist/.nojekyll
+      - name: Ensure .nojekyll exists to disable Jekyll processing
+        run: |
+          touch dist/.nojekyll
+          echo ".nojekyll file created to prevent Jekyll processing"
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
