@@ -2,7 +2,6 @@
 title: 'Getting Started: Reflections on AI'
 description: 'Beginning a journey of documenting thoughts and learnings about artificial intelligence'
 pubDate: 'Dec 27 2024'
-heroImage: '../../assets/blog-placeholder-1.jpg'
 ---
 
 Welcome to my blog where I'll be sharing my thoughts and reflections on artificial intelligence. This space is dedicated to exploring both the technical and philosophical aspects of AI, documenting what I learn along the way, and engaging with the broader conversation about how AI is shaping our world.
