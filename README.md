@@ -1,4 +1,4 @@
-# Jerome Placido's Blog
+# Jerome's Blog
 
 A personal blog built with Astro, focusing on professional and personal reflections on AI.
 
