@@ -32,7 +32,7 @@ In the afternoon, I'll use voice mode to debrief my day.  I'll talk through what
 One of the most valuable aspects of using ChatGPT with integrations is the context it has access to.  By connecting it to my Drive, Calendar, and Gmail, it can help me connect dots between meetings, emails, and documents that I might miss on my own.  This has been particularly helpful when trying to understand the "why" behind decisions or when trying to piece together the history of a project.
 
 ### Cursor as a Coding Companion
-While ChatGPT helps me understand the big picture, Cursor has been invaluable for the day-to-day coding work.  The ability to have AI understand the entire codebase context while I'm working has dramatically reduced the time it takes me to write code that fits the existing patterns.  It's like having a pair programming partner who knows the codebase inside and out.
+While ChatGPT helps me understand the big picture, Cursor has been invaluable for learning and understanding the codebase.  As an engineering leader, it's less important for me to contribute code directly.  However, Cursor helps me answer questions by exploring the codebase myself, rather than always needing to ask an engineer.
 
 ### Voice Mode for Reflection
 The voice mode feature has been a game-changer for me.  There's something about speaking my thoughts out loud that helps me process information differently than typing.  It's also much faster for me to debrief my day verbally than to type everything out.  The fact that it's going away from the desktop version is disappointing, but I'm making do with the web client.
