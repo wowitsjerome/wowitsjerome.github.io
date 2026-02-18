@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1a1a1a">
+  <title>Boxing Drills</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="round-header">
+      <h1 class="round-counter" id="roundCounter" aria-live="polite">Round 1 of 12</h1>
+    </header>
+
+    <section class="timer-section" aria-live="polite">
+      <p class="phase-label" id="phaseLabel">Round</p>
+      <p class="countdown" id="countdown">3:00</p>
+    </section>
+
+    <section class="drill-section">
+      <p class="drill-combo" id="drillCombo">Jab → Cross → Lead hook</p>
+      <button type="button" class="btn btn-combo" id="newComboBtn">New combo</button>
+    </section>
+
+    <section class="config-section">
+      <label class="config-row">
+        <span class="config-label">Round</span>
+        <select id="roundLength" class="config-select" aria-label="Round length">
+          <option value="60">1:00</option>
+          <option value="90">1:30</option>
+          <option value="120">2:00</option>
+          <option value="180" selected>3:00</option>
+        </select>
+      </label>
+      <label class="config-row">
+        <span class="config-label">Rest</span>
+        <select id="restLength" class="config-select" aria-label="Rest length">
+          <option value="30">0:30</option>
+          <option value="60" selected>1:00</option>
+          <option value="90">1:30</option>
+        </select>
+      </label>
+      <label class="config-row">
+        <span class="config-label">Total rounds</span>
+        <select id="totalRounds" class="config-select" aria-label="Total rounds">
+          <option value="4">4</option>
+          <option value="6">6</option>
+          <option value="8">8</option>
+          <option value="10">10</option>
+          <option value="12" selected>12</option>
+        </select>
+      </label>
+    </section>
+
+    <section class="controls-section">
+      <button type="button" class="btn btn-primary" id="startBtn">Start</button>
+      <button type="button" class="btn btn-secondary" id="pauseBtn" disabled>Pause</button>
+      <button type="button" class="btn btn-secondary" id="resetBtn">Reset</button>
+    </section>
+
+    <div class="workout-complete" id="workoutComplete" hidden aria-live="polite">
+      Workout complete
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
