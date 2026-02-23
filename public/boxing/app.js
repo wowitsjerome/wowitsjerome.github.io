@@ -168,8 +168,15 @@
     ['J', 'C', 'LH', 'C', 'Cb']
   ];
 
-  function randomCombo() {
-    const combo = COMBO_LIBRARY[Math.floor(Math.random() * COMBO_LIBRARY.length)];
+  let lastComboIndex = -1;
+
+  function randomCombo(avoidImmediateRepeat) {
+    let comboIndex = Math.floor(Math.random() * COMBO_LIBRARY.length);
+    if (avoidImmediateRepeat && COMBO_LIBRARY.length > 1 && comboIndex === lastComboIndex) {
+      comboIndex = (comboIndex + 1 + Math.floor(Math.random() * (COMBO_LIBRARY.length - 1))) % COMBO_LIBRARY.length;
+    }
+    lastComboIndex = comboIndex;
+    const combo = COMBO_LIBRARY[comboIndex];
     return combo.map(function (abbr) { return PUNCH_LABELS[abbr] || abbr; }).join(' → ');
   }
 
@@ -247,6 +254,7 @@
         }
         state.phase = 'round';
         state.remainingSeconds = getRoundSeconds();
+        setDrillCombo(randomCombo(true));
         updatePhaseDisplay();
         updateCountdownDisplay();
         playStartBell();
@@ -267,6 +275,7 @@
       state.phase = 'round';
       state.remainingSeconds = state.roundSeconds;
       state.currentRound = 1;
+      setDrillCombo(randomCombo(true));
       updateRoundDisplay();
     }
 
@@ -329,7 +338,7 @@
   pauseBtn.addEventListener('click', pauseTimer);
   resetBtn.addEventListener('click', resetTimer);
   newComboBtn.addEventListener('click', function () {
-    setDrillCombo(randomCombo());
+    setDrillCombo(randomCombo(true));
   });
 
   // --- Init ---
