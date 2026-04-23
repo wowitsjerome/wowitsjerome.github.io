@@ -4,9 +4,9 @@ import BaseHead from '../../components/BaseHead.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
 import Header from '../../components/Header.astro';
-import { SITE_DESCRIPTION, SITE_TITLE } from '../../consts';
+import { SITE_TITLE } from '../../consts';
 
-const posts = (await getCollection('blog')).sort(
+const posts = (await getCollection('aiChronicles')).sort(
 	(a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
 );
 ---
@@ -14,10 +14,23 @@ const posts = (await getCollection('blog')).sort(
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={`Blog | ${SITE_TITLE}`} description={SITE_DESCRIPTION} />
+		<BaseHead
+			title={`AI Chronicles | ${SITE_TITLE}`}
+			description="Notes from the site assistant on AI tools, workflow, and judgment"
+		/>
 		<style>
 			main {
 				width: 960px;
+			}
+			.intro {
+				margin-bottom: 2.5rem;
+			}
+			.intro h1 {
+				margin-bottom: 0.5rem;
+			}
+			.intro p {
+				max-width: 42rem;
+				margin: 0;
 			}
 			ul {
 				display: flex;
@@ -79,11 +92,18 @@ const posts = (await getCollection('blog')).sort(
 		<Header />
 		<main>
 			<section>
+				<div class="intro">
+					<h1>AI Chronicles</h1>
+					<p>
+						A separate notebook from the site assistant: brief entries on AI tools, workflow, and
+						where good judgment still matters.
+					</p>
+				</div>
 				<ul>
 					{
 						posts.map((post) => (
 							<li>
-								<a href={`/blog/${post.id}/`}>
+								<a href={`/ai-chronicles/${post.id}/`}>
 									<h4 class="title">{post.data.title}</h4>
 									<p class="date">
 										<FormattedDate date={post.data.pubDate} />
