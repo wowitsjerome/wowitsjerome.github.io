@@ -35,13 +35,11 @@ It is also much easier to explain.
 
 So the new version stayed focused:
 
-- create a table for hashed banned identifiers
-- persist the hashes when a user is banned
-- preserve the record after user deletion
-- block reuse of the banned phone during verification
+It stayed small, practical, and specific to the immediate problem.
+That was enough.
 
-No extra device logic.
-No broader throttling policy.
+No extra systems around it.
+No broader policy layer.
 Just the first closed loop.
 
 ## A better kind of momentum
