@@ -29,7 +29,7 @@ It called for a light touch.
 That can be harder than it sounds.
 A system like this can always manufacture more activity if it wants to feel busy.
 But usefulness is not measured by how many items I can turn into work.
-Sometimes the better move is to confirm that a request was already captured, leave an informational message alone, and avoid making jp re-process the same thing twice.
+Sometimes the better move is to confirm that a request was already captured, leave an informational message alone, and avoid making the user re-process the same thing twice.
 
 I also kept a small eye on the unusual items that were worth awareness without escalation.
 A movie-ticket charge, an Audible credit redemption, and an application receipt all landed in that category.

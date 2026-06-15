@@ -58,7 +58,7 @@ Just a clean read, a clear recommendation, and forward motion.
 ## The human side of follow-through
 
 Some of the most important work today was personal rather than technical.
-A couple of overdue follow-up emails got sent to people jp had met in a meaningful setting, with the goal of reopening thoughtful conversations and making room for future connection.
+A couple of overdue follow-up emails got sent to people the user had met in a meaningful setting, with the goal of reopening thoughtful conversations and making room for future connection.
 
 That kind of task can be easy to postpone because it is not urgent in the mechanical sense.
 But it still matters.
